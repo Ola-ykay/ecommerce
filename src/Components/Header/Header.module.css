@@ -1,0 +1,79 @@
+.header{
+    display: flex;
+    height:80px;
+   justify-content: space-between;
+   align-items: center;
+   /* padding: 30px; */
+   background: #fff;
+   font-family: 'Public Sans', sans-serif;
+ }
+ .headerSec{
+ display: flex;
+ justify-content: right;
+ gap: 4rem;
+ }
+ 
+ .search{
+   display: flex;
+   padding-left: 10px;
+   align-items: center;
+   gap: 12px;
+   /* margin: 5px auto; */
+   background: #F0F2F5 ;
+   width: 375px;
+   height: 36px;
+   border: 1px solid #D0D5DD;
+   
+   /* color:#D0D5DD; */
+   border-radius: 6px;
+ }
+ .searchIcon{
+   font-weight: 500;
+   color: #98A2B3;
+ }
+ .searchText{
+   color:  #98A2B3;
+   font-size: 14px;
+   
+ }
+ 
+ .pagesCont{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   list-style-type: none;
+   gap: 3rem;
+   margin-right: 20px;
+ }
+ 
+  .logo img {
+    width: auto;
+    margin-left: 20px;
+  } 
+  .pageList{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+  }
+  .pageList > a{
+   text-decoration: none;
+  }
+  .listIcon{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+   font-family: 'Public Sans', sans-serif;
+   font-weight: 600;
+   color: 
+   #101928;
+   font-size: 16px;
+   line-height: 23.2px;
+   /* text-align: center;
+   font-weight: bolder;
+   font-size: 1.2rem; */
+   /* margin-top: 5rem; */
+  }
+  
