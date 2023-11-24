@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./ProductPage.module.css";
 import Products from "../Product/Product";
-// import Rating from "../ProductsPage/Rating";
+import Rating from "../ProductsPage/Rating";
 import CartButton from "./CartButton";
 
 const ProductPage = () => { 
@@ -16,8 +16,8 @@ const ProductPage = () => {
                 <img
                   src={product.image}
                   alt={product.name}
-                  height={260}
-                  width={296}
+                  // height={260}
+                  // width={296}
                 />
               </div>
 
@@ -33,8 +33,8 @@ const ProductPage = () => {
                
                 <p className={styles.product_desc}>{product.description}</p>
                 <div className={styles.rating}>
-                  {/* <Rating /> */}
-                  <span>(91)</span>
+                  <Rating />
+                  <span className={styles.number}>(91)</span>
                 </div>
                 <CartButton />
               </div>

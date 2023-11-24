@@ -5,8 +5,8 @@ import { FaCartShopping } from "react-icons/fa6";
 const CartButton = () => {
   return (
     <button className={styles.add_to_cart}>
-        <FaCartShopping />
-      Add to Cart
+       <h2><FaCartShopping size={15}/></h2> 
+      <p>Add to Cart</p>
     </button>
   );
 };

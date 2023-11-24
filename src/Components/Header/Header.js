@@ -1,12 +1,17 @@
 import React from 'react';
 import { CiSearch  } from "react-icons/ci";
 import { FaCartShopping } from "react-icons/fa6";
-import { FaRegHeart } from "react-icons/fa";
+import { FaRegHeart, FaBars, FaTimes } from "react-icons/fa";
 import { FaRegUser } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 import styles from "./Header.module.css";
 
 const Header = () => {
+    const [menuOpen, setMenuOpen] = useState(false);
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
+      };
   return (
     <header className={styles.header}>
       <div>
@@ -22,7 +27,7 @@ const Header = () => {
         </div>
       
       
-        <ul className={styles.pagesCont}>
+        <ul className={`${styles.pagesCont} ${menuOpen ? styles.open : ""}`}>
           
           <li className={styles.pageList}>
           <p className={styles.listIcon}><FaRegHeart />
@@ -47,6 +52,13 @@ const Header = () => {
           
           
         </ul>
+        <div className={styles.mobile_menu} onClick={toggleMenu}>
+      {menuOpen ? (
+          <FaTimes className={styles.close_icon}/>
+        ) : (
+          <FaBars className={styles.menu_icon} />
+        )}
+      </div>
       </div>
     </header>
   )
